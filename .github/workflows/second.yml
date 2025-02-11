@@ -6,8 +6,5 @@ jobs:
     multiflow:
         runs-on: ubuntu-latest
         steps:
-         - name: displaying the message
-           run: echo " hii this is my second workflow"
-
-         - name: listing the file
-           run: ls
+         - name: excueting the content of the shell scripts
+           run: ./shellscript.sh
