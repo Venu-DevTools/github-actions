@@ -1,0 +1,12 @@
+name: Second WorkFlow
+
+on: push
+
+jobs:
+    multiflow:
+        runs-on: ubuntu-latest
+        steps:
+         - name: displaying the message
+           run: echo " hii this is my second workflow"
+
+    
