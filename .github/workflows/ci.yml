@@ -19,5 +19,8 @@ jobs:
         - name: viewing the content of the file present inside VM
           run: cat index.txt
 
+        - name: adding the action file
+          uses: actions/checkout@v4
+          
         - name: viewing the content of the file present outside VM
           run: cat README.md
