@@ -1,29 +1,15 @@
-name: My First workflow
+name: New workflow
 
 on: push
 
 jobs:
- firstjob:
-     runs-on: ubuntu-latest
-     steps:
-        - name: welcoming message
-          run: echo " hello this is my first workflow"
-        
-        - name: creating the new file
-          run: echo "good morning " > index.txt
+  Multiline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: adding the new file and viewing it 
+        run: |
+            echo "hii  good morning " > first1.txt
+            cat first1.txt
+            ls -lrt
+            
 
-        - name: listing the files
-          run: ls -lrt
-        
-
-        - name: viewing the content of the file present inside VM
-          run: cat index.txt
-          
-        - name: adding the actions
-          uses: actions/checkout@v4
-                  
-        - name: viewing the content of the file present outside VM
-          run: |
-                cat README.md
-                cat style.css
-       
