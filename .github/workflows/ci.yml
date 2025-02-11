@@ -8,3 +8,16 @@ jobs:
      steps:
         - name: welcoming message
           run: echo " hello this is my first workflow"
+        
+        - name: creating the new file
+          run: echo "good morning " > index.txt
+
+        - name: listing the files
+          run: ls -lrt
+        
+
+        - name: viewing the content of the file present inside VM
+          run: cat index.txt
+
+        - name: viewing the content of the file present outside VM
+          run: cat README.md
