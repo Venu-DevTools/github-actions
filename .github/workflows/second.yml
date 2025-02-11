@@ -7,4 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
          - name: excueting the content of the shell scripts
-           run: ./shellscript.sh
+           run: |
+              chmod +x shellscript.sh
+               ./shellscript.sh
