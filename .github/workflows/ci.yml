@@ -11,5 +11,11 @@ jobs:
             echo "hii  good morning " > first1.txt
             cat first1.txt
             ls -lrt
+
+      - name: adding third party sites
+        run: |
+            sudo apt-get install cowsay -y
+            cowsay -f cat "meow, i'm a pussy cat" 
+
             
 
