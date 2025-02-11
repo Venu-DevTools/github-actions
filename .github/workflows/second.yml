@@ -6,7 +6,11 @@ jobs:
     multiflow:
         runs-on: ubuntu-latest
         steps:
+        
+         - name: adding the actions
+           uses: actions/checkout@v4
+
          - name: excueting the content of the shell scripts
            run: |
-              chmod +x shellscript.sh
+               chmod +x shellscript.sh
                ./shellscript.sh
