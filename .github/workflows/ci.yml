@@ -15,7 +15,7 @@ jobs:
       - name: adding third party sites
         run: |
             sudo apt-get install cowsay -y
-            cowsay -f cat "meow, i'm a pussy cat" 
+            cowsay -f dragon "wrow, i'm a dragon " 
 
             
 
